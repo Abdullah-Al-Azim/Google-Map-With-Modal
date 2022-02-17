@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="map.css" />
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+    <title>Google Map</title>
+  </head>
+  <body>
+
+
+    <h2>Map Modal</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div class="main____modal">
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="container main___container">
+        <!-- Search input -->
+        <div class="all____class__search">
+          <input
+          id="searchInput"
+          class="controls"
+          type="text"
+          placeholder="Enter a location"
+        />
+       <p id="map-icon" class="main___map___icon"> <span class="iconify map____icon" data-icon="el:map-marker-alt"></span></p>
+        </div>
+  
+        <!-- Google map -->
+        <div id="map"></div>
+  
+        <!-- Display geolocation data -->
+        <!-- <ul class="geo-data">
+          <li>Full Address: <span id="location"></span></li>
+          <li>Postal Code: <span id="postal_code"></span></li>
+          <li>Country: <span id="country"></span></li>
+          <li>Latitude: <span id="lat"></span></li>
+          <li>Longitude: <span id="lon"></span></li>
+        </ul> -->
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCruA3SL5gsz0B3O6N9PyStxcpRqd0tWMo&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="map.js"></script>
+  </body>
+</html>
